@@ -1,13 +1,5 @@
 "use client";
-// import AboutSectionOne from "@/components/About/AboutSectionOne";
-// import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
 
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-
-// import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
 // import Video from "@/components/Video";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -140,7 +132,7 @@ const projectData = [
                   {" "}
                   {/* Added sm:ml-4 to shift the text left */}
                   <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl md:text-4xl">
-                    Hi, I'm
+                    {"Hi, I'm"}{" "}
                   </h1>
                   <h1 className="mb-5 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl md:text-4xl">
                     Sachin Gurjar
@@ -148,7 +140,7 @@ const projectData = [
                   {/* typewriter */}
                   <div className="mb-5 text-2xl font-bold leading-tight text-black dark:text-white sm:text-3xl md:text-4xl">
                     <div className="flex  gap-2">
-                      I'm
+                      {"I'm"}{" "}
                       <span>
                         <Typewriter
                           options={{
@@ -161,12 +153,12 @@ const projectData = [
                     </div>
                   </div>
                   <p className="mb-8 text-sm text-body-color dark:text-body-color-dark sm:text-base md:text-lg">
-                    I'm a passionate software developer with experience in
+                    {"I'm"} a passionate software developer with experience in
                     creating robust, scalable, and user-friendly applications.
                     My focus is on developing web and mobile solutions that
                     provide a seamless experience for users. I have expertise in
                     technologies such as React, JavaScript, CSS, React Native,
-                    and more. I'm always excited to learn and adapt to new tools
+                    and more. {"I'm"} always excited to learn and adapt to new tools
                     and frameworks.
                   </p>
                 </div>
@@ -690,7 +682,7 @@ const projectData = [
               My Projects
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Explore some of the projects I've worked on, showcasing my skills
+              Explore some of the projects {"I've"} worked on, showcasing my skills
               in web and mobile app development.
             </p>
           </div>
@@ -767,7 +759,7 @@ const projectData = [
               Contect Me
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Explore some of the projects I've worked on, showcasing my skills
+              Explore some of the projects {"I've"} worked on, showcasing my skills
               in web and mobile app development.
             </p>
           </div>

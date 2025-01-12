@@ -1,49 +1,26 @@
 "use client";
-
-// import Video from "@/components/Video";
-import { Metadata } from "next";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { Brand } from "@/types/brand";
 import brandsData from "./brandsData";
 import SectionTitle from "@/components/Common/SectionTitle";
-import featuresData from "../components/Skill/featuresData";
-import { Feature } from "@/types/feature";
 import Typewriter from "typewriter-effect";
-const TypingAnimation = dynamic(() => import("./TypingAnimation"), {
-  ssr: false, // Disable server-side rendering
-});
+import ErrorPage from "./error/page";
 
 export default function Home() {
+  function getRandomNumber() {
+    return Math.floor(Math.random() * 1) + 1;
+  }
+
+  // Example usage:
+  const randomNumber = getRandomNumber();
+  console.log("num", randomNumber);
+
   const downloadPDF = () => {
     const link = document.createElement("a");
     link.href = "/sachin_gurjar_resume.pdf"; // Path to the PDF file
     link.download = "sachin_gurjar_resume.pdf"; // File name for download
     link.click();
   };
-
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   const app = document.getElementById("app");
-
-  //   if (app) {
-  //     const typewriter = new Typewriter(app, {
-  //       loop: true,
-  //     });
-
-  //     typewriter
-  //       .typeString("I Am Web Designer")
-  //       .pauseFor(2500)
-  //       .deleteAll()
-  //       .typeString("I Am Graphics Designer")
-  //       .pauseFor(2500)
-  //       .deleteAll()
-  //       .typeString("I Am Creative")
-  //       .pauseFor(2500)
-  //       .start();
-  //   } else {
-  //     console.error("Element with ID 'app' not found.");
-  //   }
-  // });
 
   let typingData = [
     '<span class="text-blue-500">a Software Developer</span>',
@@ -62,59 +39,57 @@ export default function Home() {
     '<span class="text-fuchsia-500">a React Native Developer</span>',
   ];
 
-const projectData = [
-  {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Node.js", "TailwindCSS"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  {
-    title: "Project 2",
-    description: "Description of Project 2",
-    technologies: ["Next.js", "Firebase", "GraphQL"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Node.js", "TailwindCSS"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  {
-    title: "Project 2",
-    description: "Description of Project 2",
-    technologies: ["Next.js", "Firebase", "GraphQL"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Node.js", "TailwindCSS"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  {
-    title: "Project 2",
-    description: "Description of Project 2",
-    technologies: ["Next.js", "Firebase", "GraphQL"],
-    link: "#",
-    lightImage: "/images/about/about-image-2.svg", // Light mode image path
-    darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-  },
-  // Add more projects...
-];
-
-
+  const projectData = [
+    {
+      title: "Project 1",
+      description: "Description of Project 1",
+      technologies: ["React", "Node.js", "TailwindCSS"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    {
+      title: "Project 2",
+      description: "Description of Project 2",
+      technologies: ["Next.js", "Firebase", "GraphQL"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    {
+      title: "Project 1",
+      description: "Description of Project 1",
+      technologies: ["React", "Node.js", "TailwindCSS"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    {
+      title: "Project 2",
+      description: "Description of Project 2",
+      technologies: ["Next.js", "Firebase", "GraphQL"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    {
+      title: "Project 1",
+      description: "Description of Project 1",
+      technologies: ["React", "Node.js", "TailwindCSS"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    {
+      title: "Project 2",
+      description: "Description of Project 2",
+      technologies: ["Next.js", "Firebase", "GraphQL"],
+      link: "#",
+      lightImage: "/images/about/about-image-2.svg", // Light mode image path
+      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+    },
+    // Add more projects...
+  ];
 
   return (
     <>
@@ -158,13 +133,14 @@ const projectData = [
                     My focus is on developing web and mobile solutions that
                     provide a seamless experience for users. I have expertise in
                     technologies such as React, JavaScript, CSS, React Native,
-                    and more. {"I'm"} always excited to learn and adapt to new tools
-                    and frameworks.
+                    and more. {"I'm"} always excited to learn and adapt to new
+                    tools and frameworks.
                   </p>
                 </div>
 
                 {/* Image Section */}
-                <div className="flex justify-center sm:justify-start">
+
+                {/* <div className="flex justify-center sm:justify-start">
                   <Image
                     src="/images/sachin.HEIC"
                     width={350}
@@ -173,7 +149,50 @@ const projectData = [
                     loading="lazy"
                     className=" border-2 border-gray-400"
                   />
-                </div>
+                </div> */}
+
+                {(() => {
+                  if (randomNumber === 1) {
+                    return (
+                      <div className="flex justify-center sm:justify-start">
+                        <Image
+                          src="/images/sachin.HEIC"
+                          width={350}
+                          height={350}
+                          alt="Sachin Gurjar"
+                          loading="lazy"
+                          className=" border-2 border-gray-400"
+                        />
+                      </div>
+                    );
+                  } else if (randomNumber === 2) {
+                    return (
+                      <div className="flex justify-center sm:justify-start">
+                        <Image
+                          src="/images/sachin1.jpeg"
+                          width={300}
+                          height={350}
+                          alt="Sachin Gurjar"
+                          loading="lazy"
+                          className="rounded-full border-2 border-gray-400 "
+                        />
+                      </div>
+                    );
+                  } else if (randomNumber === 3) {
+                    return (
+                      <div className="flex justify-center sm:justify-start">
+                        <Image
+                          src="/images/sachin.HEIC"
+                          width={350}
+                          height={350}
+                          alt="Sachin Gurjar"
+                          loading="lazy"
+                          className=" border-2 border-gray-400"
+                        />
+                      </div>
+                    );
+                  }
+                })()}
               </div>
 
               {/* Button Section */}
@@ -556,18 +575,6 @@ const projectData = [
         </div>
       </section>
 
-      {/* <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container">
-         
-
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       <section id="experience" className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
           <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
@@ -675,15 +682,13 @@ const projectData = [
         className="bg-white py-16 dark:bg-gray-900 md:py-20 lg:py-28"
       >
         <div className="container">
-          
-         
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
               My Projects
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Explore some of the projects {"I've"} worked on, showcasing my skills
-              in web and mobile app development.
+              Explore some of the projects {"I've"} worked on, showcasing my
+              skills in web and mobile app development.
             </p>
           </div>
 
@@ -750,7 +755,7 @@ const projectData = [
       </section>
 
       <section
-        id="projects"
+        id="contect"
         className="bg-white py-16 dark:bg-gray-900 md:py-20 lg:py-28"
       >
         <div className="container">
@@ -759,8 +764,8 @@ const projectData = [
               Contect Me
             </h2>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Explore some of the projects {"I've"} worked on, showcasing my skills
-              in web and mobile app development.
+              Explore some of the projects {"I've"} worked on, showcasing my
+              skills in web and mobile app development.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
@@ -784,6 +789,7 @@ const projectData = [
           </div>
         </div>
       </section>
+      {/* <ErrorPage /> */}
     </>
   );
 }
@@ -820,25 +826,6 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         />
         <p className="text-center text-xs text-gray-700 dark:text-gray-200">
           {name}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
-  return (
-    <div className="w-full">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
-        <div className="mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-          {icon}
-        </div>
-        <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-          {title}
-        </h3>
-        <p className="pr-[10px] text-base font-medium leading-relaxed text-body-color">
-          {paragraph}
         </p>
       </div>
     </div>

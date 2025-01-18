@@ -1,13 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Enables static export
+  // output: "export", // Enables static export
   images: {
-    domains: ["localhost"], // Allow localhost for image domains
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "cdn.sanity.io", // Allows images from Sanity's CDN
+        protocol: "http", // Use http for localhost
+        hostname: "localhost",
         port: "", // Leave blank for default ports
+        pathname: "/**", // Match all paths
+      },
+      {
+        protocol: "https",
+        hostname: "sachingurjar.netlify.app",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "example.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },

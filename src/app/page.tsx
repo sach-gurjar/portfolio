@@ -41,52 +41,98 @@ export default function Home() {
 
   const projectData = [
     {
-      title: "Project 1",
+      title: "I Med Store",
       description: "Description of Project 1",
-      technologies: ["React", "Node.js", "TailwindCSS"],
       link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+      image: "/images/project/imed.png", // Light mode image path
     },
     {
-      title: "Project 2",
+      title: "Kushprakash",
       description: "Description of Project 2",
-      technologies: ["Next.js", "Firebase", "GraphQL"],
       link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+      image: "/images/project/kushprakash.png", // Light mode image path
     },
     {
-      title: "Project 1",
+      title: "Kushprakash Admin",
+      description:
+        "handle permissions and roles for the admin and user...",
+      fulldescription:
+        "In this project, I manage DURD operation for marriage, directory, and new section and also handle the links and the relation of the family members and other detail and also manage multiple images videos social media links to update user profile and share functionality to share user profile in Facebook, WhatsApp and telegram using meta implement a functionality to search a different different categories data and analyse records to send mails and similar users",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "Getmii",
       description: "Description of Project 1",
-      technologies: ["React", "Node.js", "TailwindCSS"],
       link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+      image: "/images/about/about-image-2.svg", // Light mode image path
     },
     {
-      title: "Project 2",
-      description: "Description of Project 2",
-      technologies: ["Next.js", "Firebase", "GraphQL"],
-      link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
-    },
-    {
-      title: "Project 1",
+      title: "Getmii Admin",
       description: "Description of Project 1",
-      technologies: ["React", "Node.js", "TailwindCSS"],
       link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+
+    {
+      title: "Map project",
+      description: "Description of Project 1",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
     },
     {
-      title: "Project 2",
+      title: "Customer portal",
       description: "Description of Project 2",
-      technologies: ["Next.js", "Firebase", "GraphQL"],
       link: "#",
-      lightImage: "/images/about/about-image-2.svg", // Light mode image path
-      darkImage: "/images/about/about-image-2-dark.svg", // Dark mode image path
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "Internal Portal",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "management portal",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "Getmii mobile app",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "mymenukart",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "mymenukart android app",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "mymenukart ios app",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "mymenukart admin panel",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
+    },
+    {
+      title: "mymenukart delevery app",
+      description: "Description of Project 2",
+      link: "#",
+      image: "/images/about/about-image-2.svg", // Light mode image path
     },
     // Add more projects...
   ];
@@ -200,7 +246,7 @@ export default function Home() {
                 <button
                   onClick={downloadPDF}
                   className="flex transform items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 text-white shadow-lg transition-transform duration-300 
-    hover:scale-110 hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl"
+                   hover:scale-110 hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -484,8 +530,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-16">
-        <div data-aos="fade-up" id="skill" className="container">
+      <section id="skill" className="pt-16">
+        <div data-aos="fade-up" className="container">
           <SectionTitle
             title="My Skill"
             paragraph="Here are some of my skills on which I have been working on for the past 2 years."
@@ -537,7 +583,7 @@ export default function Home() {
               {/* Row for native and devops */}
               <div className="flex flex-wrap items-start justify-between space-x-4 rounded-sm bg-gray-light p-8 dark:bg-gray-dark">
                 {/* native Section */}
-                <div className="w-full sm:w-1/2 lg:w-[48%]">
+                <div className="w-full sm:w-1/2 lg:w-[31%]">
                   <div
                     data-aos="fade-up"
                     className="mb-4 text-center text-xl font-bold text-gray-800 dark:text-white sm:text-2xl md:text-3xl"
@@ -554,7 +600,7 @@ export default function Home() {
                 </div>
 
                 {/* devops Section */}
-                <div className="w-full sm:w-1/2 lg:w-[48%]">
+                <div className="w-full sm:w-1/2 lg:w-[31%]">
                   <div
                     data-aos="fade-up"
                     className="mb-4 text-center text-xl font-bold text-gray-800 dark:text-white sm:text-2xl md:text-3xl"
@@ -564,6 +610,22 @@ export default function Home() {
                   <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light p-6 dark:bg-gray-dark">
                     {brandsData
                       .filter((brand) => brand.category === "devops") // Example filter for devops brands
+                      .map((brand) => (
+                        <SingleBrand key={brand.id} brand={brand} />
+                      ))}
+                  </div>
+                </div>
+                {/* devops Section */}
+                <div className="w-full sm:w-1/2 lg:w-[31%]">
+                  <div
+                    data-aos="fade-up"
+                    className="mb-4 text-center text-xl font-bold text-gray-800 dark:text-white sm:text-2xl md:text-3xl"
+                  >
+                    Other tools
+                  </div>
+                  <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light p-6 dark:bg-gray-dark">
+                    {brandsData
+                      .filter((brand) => brand.category === "othertools") // Example filter for devops brands
                       .map((brand) => (
                         <SingleBrand key={brand.id} brand={brand} />
                       ))}
@@ -679,75 +741,50 @@ export default function Home() {
 
       <section
         id="projects"
-        className="bg-white py-16 dark:bg-gray-900 md:py-20 lg:py-28"
+        className="bg-gray-50 py-16 dark:bg-gray-900 md:py-20 lg:py-28"
       >
-        <div className="container">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16">
+          {/* Section Header */}
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
-              My Projects
+            <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white sm:text-4xl">
+              Featured Projects
             </h2>
-            <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Explore some of the projects {"I've"} worked on, showcasing my
-              skills in web and mobile app development.
+            <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">
+              A showcase of projects I've worked on, highlighting my expertise
+              in designing and building impactful digital solutions.
             </p>
           </div>
 
           {/* Projects Grid */}
-          <div className=" grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {projectData.map((project, index) => (
               <div
-                key={index}
-                className="relative flex flex-col overflow-hidden rounded-lg bg-cover bg-center shadow-lg transition-transform duration-300 hover:scale-105"
+                data-aos="fade-up"
+                className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800"
               >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/20 dark:bg-black/70"></div>
+                <a
+                  key={index}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* Project Image */}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-48 w-full object-cover"
+                  />
 
-                {/* Background Image */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${project.lightImage})`, // Light mode image
-                  }}
-                ></div>
-                <div
-                  className="absolute inset-0 hidden bg-cover bg-center dark:block"
-                  style={{
-                    backgroundImage: `url(${project.darkImage})`, // Dark mode image
-                  }}
-                ></div>
-
-                {/* Content */}
-                <div className="relative z-10 p-6">
-                  <h3 className="text-lg font-bold dark:text-white sm:text-xl lg:text-2xl">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-sm dark:text-gray-300 sm:text-base">
-                    {project.description}
-                  </p>
-                  <div className="mt-4">
-                    <h4 className="mb-2 text-sm font-semibold dark:text-gray-200 sm:text-base">
-                      Technologies:
+                  {/* Project Content */}
+                  <div className="p-4">
+                    <h4 className="text-lg font-semibold text-gray-800 dark:text-white sm:text-xl">
+                      {project.title}
                     </h4>
-                    <ul className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, techIndex) => (
-                        <li
-                          key={techIndex}
-                          className="rounded-full bg-blue-600 px-3 py-1 text-xs font-medium dark:bg-indigo-500"
-                        >
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 sm:text-sm">
+                      {project.description}
+                    </p>
                   </div>
-                  <a
-                    href={project.link}
-                    className="mt-6 inline-block rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-4 py-2 text-sm font-medium text-white shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-700"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
-                </div>
+                </a>
               </div>
             ))}
           </div>
@@ -761,19 +798,20 @@ export default function Home() {
         <div className="container">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
-              Contect Me
+              {/* Contect Me */}
+              <h1>Contact form coming soon ...</h1>
             </h2>
-            <p className="mt-4 text-gray-600 dark:text-gray-300">
+            {/* <p className="mt-4 text-gray-600 dark:text-gray-300">
               Explore some of the projects {"I've"} worked on, showcasing my
               skills in web and mobile app development.
-            </p>
+            </p> */}
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div
               className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
-              <Image
+              {/* <Image
                 src="/images/about/about-image-2.svg"
                 alt="about image"
                 fill
@@ -784,7 +822,7 @@ export default function Home() {
                 alt="about image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
+              /> */}
             </div>
           </div>
         </div>

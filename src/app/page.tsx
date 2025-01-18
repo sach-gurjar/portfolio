@@ -761,9 +761,9 @@ export default function Home() {
               <div
                 data-aos="fade-up"
                 className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800"
+                key={index}
               >
                 <a
-                  key={index}
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"

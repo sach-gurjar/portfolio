@@ -750,7 +750,7 @@ export default function Home() {
               Featured Projects
             </h2>
             <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">
-              A showcase of projects I've worked on, highlighting my expertise
+              A showcase of projects {"I've"} worked on, highlighting my expertise
               in designing and building impactful digital solutions.
             </p>
           </div>

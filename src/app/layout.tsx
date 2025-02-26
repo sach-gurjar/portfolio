@@ -1,6 +1,6 @@
 "use client";
 
-// import Footer from "@/components/Footer";
+import { Providers } from "./providers";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
@@ -23,9 +23,9 @@ export default function RootLayout({
       once: false, // Whether animation should happen only once
       offset: 200, // Offset from the element (in px)
       easing: "ease-in-out", // Easing function
-      // delay: 100, // Delay before animation starts (in ms)
     });
   }, []);
+
   return (
     <html suppressHydrationWarning lang="en">
       <head>
@@ -48,7 +48,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://sachingurjar.netlify.app/_next/image?url=%2Fimages%2Fsachin.HEIC&w=750&q=75" />
         <meta property="og:url" content="https://sachingurjar.netlify.app/" />
         <meta name="twitter:card" content="summary_large_image" />
-        
+
         {/* Theme Meta Tag */}
         <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
@@ -64,5 +64,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import { Providers } from "./providers";

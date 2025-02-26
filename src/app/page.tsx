@@ -791,27 +791,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section
+      {/* <section
         id="contect"
         className="bg-white py-16 dark:bg-gray-900 md:py-20 lg:py-28"
       >
         <div className="container">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
-              {/* Contect Me */}
+              Contect Me
               <h1>Contact form coming soon ...</h1>
             </h2>
-            {/* <p className="mt-4 text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
               Explore some of the projects {"I've"} worked on, showcasing my
               skills in web and mobile app development.
-            </p> */}
+            </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div
               className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
               data-wow-delay=".15s"
             >
-              {/* <Image
+              <Image
                 src="/images/about/about-image-2.svg"
                 alt="about image"
                 fill
@@ -822,11 +822,13 @@ export default function Home() {
                 alt="about image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              /> */}
+              />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
       {/* <ErrorPage /> */}
     </>
   );

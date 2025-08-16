@@ -5,6 +5,7 @@ import brandsData from "./brandsData";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Typewriter from "typewriter-effect";
 import ErrorPage from "./error/page";
+import ContactSection from "@/components/Common/ContactSection";
 
 export default function Home() {
   function getRandomNumber() {
@@ -830,6 +831,8 @@ export default function Home() {
 
 
       {/* <ErrorPage /> */}
+
+      <ContactSection />
     </>
   );
 }

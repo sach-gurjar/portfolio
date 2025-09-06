@@ -2,6 +2,7 @@
 const nextConfig = {
   output: "export", // Enables static export
   images: {
+    unoptimized: true, // Disable image optimization API
     remotePatterns: [
       {
         protocol: "http", // Use http for localhost

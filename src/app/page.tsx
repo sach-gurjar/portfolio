@@ -770,9 +770,11 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   {/* Project Image */}
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    width={800}
+                    height={400}
                     className="h-48 w-full object-cover"
                   />
 

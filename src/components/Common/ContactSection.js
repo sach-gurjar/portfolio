@@ -21,7 +21,7 @@ const ContactSection = () => {
             Get In Touch
           </h2>
           <p className="mt-3 text-lg text-gray-600 dark:text-gray-300">
-            Have a project in mind? Let's discuss how I can help bring your ideas to life.
+            Have a project in mind? Let&apos;s discuss how I can help bring your ideas to life.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 Ready to Start Your Project?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                I'm always excited to work on new and challenging projects. Let's discuss your ideas!
+                I&apos;m always excited to work on new and challenging projects. Let&apos;s discuss your ideas!
               </p>
               <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
                 <button
